@@ -1,0 +1,75 @@
+# -------------------------
+# Build folders
+# -------------------------
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# -------------------------
+# Qt / QML generated files
+# -------------------------
+*.qmlc
+*.jsc
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# -------------------------
+# Qt Creator / VSCode / IDE
+# -------------------------
+*.pro.user
+.pro.user.
+*.qbs.user
+.qbs.user.
+*.creator.user
+.creator.user.
+*.autosave
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# CLion / JetBrains
+.idea/
+
+# -------------------------
+# OS / Misc
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# -------------------------
+# Binaries / Libs
+# -------------------------
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.obj
+*.o
+*.lo
+*.la
+*.def
+*.exp
+
+# -------------------------
+# Logs / Temp
+# -------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+
+# -------------------------
+# Node.js (nếu có backend JS kèm)
+# -------------------------
+node_modules/
+dist/
