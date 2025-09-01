@@ -207,7 +207,7 @@ const updateRoomStatus = asyncHandler(async (req, res) => {
 });
 
 const createMultipleRooms = asyncHandler(async (req, res) => {
-    const roomsData = req.body;
+    const roomsData = req.body.rooms;
 
     // Kiểm tra xem req.body có phải là mảng không
     if (!Array.isArray(roomsData) || roomsData.length === 0) {

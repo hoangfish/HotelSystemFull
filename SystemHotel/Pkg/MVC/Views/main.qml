@@ -26,10 +26,14 @@ ApplicationWindow {
             if (stackView.currentItem && stackView.currentItem.objectName === "Login") {
                 let login = stackView.currentItem
                 login.loginSuccess.connect(() => {
+                    Qt.callLater(()=>{
                     stackView.replace("qrc:/Pkg/MVC/Views/Booking.qml", {stackViewRef: stackView})
+                    });
                 })
                 login.adminLoginSuccess.connect(() => {
+                    Qt.callLater(()=>{
                     stackView.replace("qrc:/Pkg/MVC/Views/CustomerList.qml", {stackViewRef: stackView})
+                    });
                 })
             }
 

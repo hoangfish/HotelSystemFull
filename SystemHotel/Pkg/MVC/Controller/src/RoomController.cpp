@@ -87,7 +87,7 @@ void RoomController::getRooms() {
             Q_EMIT roomsFetched(rooms);
             if (!isSubscribeSocket) {
                 SocketIoClient::getInstance().listenForEvent(
-                    SIG_NOTI_UPDATESTATUS, [&](sio::event &event) {  // Sửa match emit, format string như bản cũ
+                    SIG_NOTI_ROOMIDCHANGES, [&](sio::event &event) {  // Sửa match emit, format string như bản cũ
                         std::string roomId = event.get_message()->get_string();
                         LOG(LogLevel::INFO, "Received event: " + event.get_name() +
                                 ", roomId: " + roomId);
